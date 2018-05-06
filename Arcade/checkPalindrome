@@ -27,3 +27,18 @@ true if inputString is a palindrome, false otherwise.
 
 def checkPalindrome_01(inputString):
     return inputString == inputString[::-1]
+
+
+'''
+First Attemp
+
+def checkPalindrome(inputString):
+    n = -1
+    for i in range(len(inputString)/2):
+        if inputString[i] != inputString[n]:
+            return False
+        else:
+            n -= 1
+    return True
+        
+'''
