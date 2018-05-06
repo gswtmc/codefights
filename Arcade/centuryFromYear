@@ -23,3 +23,23 @@ Guaranteed constraints:
 The number of the century the year is in.
 '''
 
+def centuryFromYear(year):
+  return (year-1)//100 + 1
+
+
+
+
+'''
+First Attempt
+
+def checkPalindrome(inputString):
+    n = -1
+    for i in range(len(inputString)/2):
+        if inputString[i] != inputString[n]:
+            return False
+        else:
+            n -= 1
+    return True
+        
+    
+'''
