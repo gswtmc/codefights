@@ -1,0 +1,39 @@
+'''
+Given a string, find out if its characters can be rearranged to form a palindrome.
+
+Example
+
+For inputString = "aabb", the output should be
+palindromeRearranging(inputString) = true.
+
+We can rearrange "aabb" to make "abba", which is a palindrome.
+
+Input/Output
+
+[execution time limit] 4 seconds (py)
+
+[input] string inputString
+
+A string consisting of lowercase English letters.
+
+Guaranteed constraints:
+1 ≤ inputString.length ≤ 50.
+
+[output] boolean
+
+true if the characters of the inputString can be rearranged to form a palindrome, false otherwise.
+
+'''
+
+def palindromeRearranging(inputString):
+    i = 0
+    for char in set(inputString):
+        if len(inputString)%2==0:
+            if inputString.count(char)%2!=0:
+                return False
+        else:
+            if inputString.count(char)%2!=0:
+                i += 1
+    return i < 2
+
+
