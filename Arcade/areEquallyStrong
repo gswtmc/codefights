@@ -54,3 +54,12 @@ true if you and your friend are equally strong, false otherwise.
 def areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight):
     return (yourLeft == friendsLeft and yourRight == friendsRight) or (yourRight==friendsLeft and yourLeft==friendsRight)
 
+
+'''
+Better Answer
+
+
+def areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight):
+    return sort([yourLeft,yourRight])==sort([friendsLeft,friendsRight])
+
+'''
